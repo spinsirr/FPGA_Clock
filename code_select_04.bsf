@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 288 176)
+	(text "clock_time_04" (rect 5 0 104 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 141 31 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clkin1_04" (rect 0 0 64 16)(font "Arial" (font_size 8)))
+		(text "clkin1_04" (rect 21 27 85 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clkin2_5_04" (rect 0 0 81 16)(font "Arial" (font_size 8)))
+		(text "clkin2_5_04" (rect 21 43 102 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "fre_cho_04[1..0]" (rect 0 0 109 16)(font "Arial" (font_size 8)))
+		(text "fre_cho_04[1..0]" (rect 21 59 130 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "hour_h_04[3..0]" (rect 0 0 106 16)(font "Arial" (font_size 8)))
+		(text "hour_h_04[3..0]" (rect 145 27 251 43)(font "Arial" (font_size 8)))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "hour_l_04[3..0]" (rect 0 0 101 16)(font "Arial" (font_size 8)))
+		(text "hour_l_04[3..0]" (rect 150 43 251 59)(font "Arial" (font_size 8)))
+		(line (pt 272 48)(pt 256 48)(line_width 3))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "min_h_04[3..0]" (rect 0 0 101 16)(font "Arial" (font_size 8)))
+		(text "min_h_04[3..0]" (rect 150 59 251 75)(font "Arial" (font_size 8)))
+		(line (pt 272 64)(pt 256 64)(line_width 3))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "min_l_04[3..0]" (rect 0 0 96 16)(font "Arial" (font_size 8)))
+		(text "min_l_04[3..0]" (rect 155 75 251 91)(font "Arial" (font_size 8)))
+		(line (pt 272 80)(pt 256 80)(line_width 3))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "sec_h_04[3..0]" (rect 0 0 101 16)(font "Arial" (font_size 8)))
+		(text "sec_h_04[3..0]" (rect 150 91 251 107)(font "Arial" (font_size 8)))
+		(line (pt 272 96)(pt 256 96)(line_width 3))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "sec_l_04[3..0]" (rect 0 0 96 16)(font "Arial" (font_size 8)))
+		(text "sec_l_04[3..0]" (rect 155 107 251 123)(font "Arial" (font_size 8)))
+		(line (pt 272 112)(pt 256 112)(line_width 3))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "wk_04[6..0]" (rect 0 0 79 16)(font "Arial" (font_size 8)))
+		(text "wk_04[6..0]" (rect 172 123 251 139)(font "Arial" (font_size 8)))
+		(line (pt 272 128)(pt 256 128)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 144))
+	)
+)

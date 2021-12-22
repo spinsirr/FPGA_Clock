@@ -1,0 +1,40 @@
+module counter60_04(clk_04, data_04, dout_04, load_04, cout_04)
+input clk_04, load_04;
+input [7:0] data;
+output [7:0] dout_04;
+output cout_04;
+	reg c = 0;
+	reg[3:0] ten, unit;
+	assign dout_04 = {ten, unit};
+	always@(posedge clk_04 or posedge load_04)
+	begin
+		if(load_04)
+			{ten, unit}<= data;
+		else
+		begin
+			if(ten==5)
+			begin
+				if(unit==8)
+				begin
+					cout_04=1;
+					unit <= unit+1;
+				end
+				else if(unit==9)
+				begin
+					cout_04=0;
+					{ten, unit}<=0;
+				end
+				else
+					unit <= unit+1;
+			end
+			else if(unit==9)
+			begin
+				ten <= ten+1;
+				unit <= 0;
+			end
+			else
+				unit <= unit+1;
+		end
+	end
+endmodule
+				

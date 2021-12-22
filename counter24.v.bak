@@ -1,0 +1,39 @@
+module counter60_04(clkin_04, ld_04, data_04, out_04, c_04);
+input clkin_04, ld_04;
+input [7:0] data_04;
+output [7:0] out_04;
+output c_04;
+    reg c_04 = 0;
+    reg[3:0] ten, unit;
+    assign out_04 = {ten, unit};
+    always@(posedge clkin_04 or posedge ld_04)
+    begin   
+        if(ld_04)
+            {ten, unit} <= data_04;
+        else
+        begin
+            if(ten == 2)
+            begin
+                if(unit == 2)
+                begin
+                    c_04 = 1;
+                    unit <= unit+1;
+                end
+                else if(unit == 3)
+                begin
+                    c_04 = 0;
+                    {ten, unit} <= 0;
+                end
+                else
+                    unit <= unit+1;
+            end
+            else if(unit == 3)
+            begin
+                ten <= ten+1;
+                unit <= 0;
+            end
+            else
+                unit <= unit+1;
+        end
+    end
+endmodule

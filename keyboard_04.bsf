@@ -1,0 +1,78 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 272 144)
+	(text "keyboard_04" (rect 5 0 92 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 109 31 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "keyin_04[7..0]" (rect 0 0 96 16)(font "Arial" (font_size 8)))
+		(text "keyin_04[7..0]" (rect 21 27 117 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "key_sw_04[1..0]" (rect 0 0 112 16)(font "Arial" (font_size 8)))
+		(text "key_sw_04[1..0]" (rect 21 43 133 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "anti_vib_clk_04" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "anti_vib_clk_04" (rect 21 59 124 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "out0_04[7..0]" (rect 0 0 89 16)(font "Arial" (font_size 8)))
+		(text "out0_04[7..0]" (rect 146 27 235 43)(font "Arial" (font_size 8)))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "out1_04[7..0]" (rect 0 0 89 16)(font "Arial" (font_size 8)))
+		(text "out1_04[7..0]" (rect 146 43 235 59)(font "Arial" (font_size 8)))
+		(line (pt 256 48)(pt 240 48)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "out2_04[7..0]" (rect 0 0 89 16)(font "Arial" (font_size 8)))
+		(text "out2_04[7..0]" (rect 146 59 235 75)(font "Arial" (font_size 8)))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "out3_04[7..0]" (rect 0 0 89 16)(font "Arial" (font_size 8)))
+		(text "out3_04[7..0]" (rect 146 75 235 91)(font "Arial" (font_size 8)))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 112))
+	)
+)

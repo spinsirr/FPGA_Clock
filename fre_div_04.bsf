@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 264 176)
+	(text "fre_div_04" (rect 5 0 72 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 141 31 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_50mhz_04" (rect 0 0 99 16)(font "Arial" (font_size 8)))
+		(text "clk_50mhz_04" (rect 21 27 120 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "clk_1hz_04" (rect 0 0 77 16)(font "Arial" (font_size 8)))
+		(text "clk_1hz_04" (rect 150 27 227 43)(font "Arial" (font_size 8)))
+		(line (pt 248 32)(pt 232 32))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "clk_500hz_04" (rect 0 0 94 16)(font "Arial" (font_size 8)))
+		(text "clk_500hz_04" (rect 133 43 227 59)(font "Arial" (font_size 8)))
+		(line (pt 248 48)(pt 232 48))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "clk_5khz_04" (rect 0 0 86 16)(font "Arial" (font_size 8)))
+		(text "clk_5khz_04" (rect 141 59 227 75)(font "Arial" (font_size 8)))
+		(line (pt 248 64)(pt 232 64))
+	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "clk_500khz_4" (rect 0 0 94 16)(font "Arial" (font_size 8)))
+		(text "clk_500khz_4" (rect 133 75 227 91)(font "Arial" (font_size 8)))
+		(line (pt 248 80)(pt 232 80))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "clk_2_5hz_04" (rect 0 0 94 16)(font "Arial" (font_size 8)))
+		(text "clk_2_5hz_04" (rect 133 91 227 107)(font "Arial" (font_size 8)))
+		(line (pt 248 96)(pt 232 96))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "clk_1khz_04" (rect 0 0 86 16)(font "Arial" (font_size 8)))
+		(text "clk_1khz_04" (rect 141 107 227 123)(font "Arial" (font_size 8)))
+		(line (pt 248 112)(pt 232 112))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "clk_100hz_04" (rect 0 0 94 16)(font "Arial" (font_size 8)))
+		(text "clk_100hz_04" (rect 133 123 227 139)(font "Arial" (font_size 8)))
+		(line (pt 248 128)(pt 232 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 144))
+	)
+)
