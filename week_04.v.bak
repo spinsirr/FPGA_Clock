@@ -1,0 +1,10 @@
+module week_04(
+	input clk——04,
+	output reg[6:0] wk_04
+	);
+	wk_04<=7'd1;
+	always@(posedge clk_04)
+	begin
+		wk_04<={wk_04[5:0],1'b0};
+	end
+endmodule

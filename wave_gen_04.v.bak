@@ -1,0 +1,33 @@
+module wave_gen_04 (
+
+  input   wire            clk_04,
+  input   wire            rst_n_04,
+  
+  input   wire  [31:0]    divnum_04,
+  
+  output  reg             beep_04
+);
+  
+  reg           [31:0]    cnt_04;
+  
+  always @ (posedge clk_04, negedge rst_n_04) begin
+    if (rst_n_04 == 1'b0)
+      cnt_04 <= 32'd0;
+    else
+      if (cnt_04 < divnum_04 - 1'b1)
+        cnt_04 <= cnt_04 + 1'b1;
+      else
+        cnt_04 <= 32'd0;
+  end
+  
+  always @ (posedge clk_04, negedge rst_n_04) begin
+    if (rst_n_04 == 1'b0)
+      beep_04 <= 1'b0;
+    else
+      if (cnt_04 < divnum_04[31:1])
+        beep_04 <= 1'b0;
+      else
+        beep_04 <= 1'b1;
+  end
+
+endmodule
